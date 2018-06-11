@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using DataAccess;
@@ -25,8 +26,18 @@ namespace GunShopWebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+
             services.AddDbContext<ShopContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+
+            var serviceProvider = services.BuildServiceProvider();
+
+            var dbContext = serviceProvider.GetService<ShopContext>();
+            DbInitializer.Initialize(dbContext);
 
             services.AddMvc();
         }
