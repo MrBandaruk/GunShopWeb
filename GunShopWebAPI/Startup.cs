@@ -32,7 +32,7 @@ namespace GunShopWebAPI
                 .Build();
 
             services.AddDbContext<ShopContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection1")));
 
             var serviceProvider = services.BuildServiceProvider();
 

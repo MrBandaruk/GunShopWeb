@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GunShopWebAPI", "GunShopWebAPI\GunShopWebAPI.csproj", "{623EAF33-5D86-4CCA-BD32-2ECE5304FA3A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GunShopWebAPI", "GunShopWebAPI\GunShopWebAPI.csproj", "{623EAF33-5D86-4CCA-BD32-2ECE5304FA3A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{1C0386DA-EA67-4EFB-A307-1F24BE5855DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\DataAccess.csproj", "{1C0386DA-EA67-4EFB-A307-1F24BE5855DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
