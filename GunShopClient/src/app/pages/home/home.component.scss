@@ -1,12 +1,22 @@
 .main {
   height: 100vh;
   background:
-    url("https://i.pinimg.com/originals/31/e2/dc/31e2dcb78ec08960d33aadd607fe8498.jpg")
+    url("../home/img/bg.jpg")
     center
     no-repeat
     fixed;
   background-size: cover;
   padding: 0;
+
+  .logo {
+    height: 155px;
+    width: 100%;
+    background: url("../home/img/logo2.png")
+                center
+                no-repeat;
+    position: absolute;
+    top: 40%;
+  }
 }
 
 .headline {
@@ -18,10 +28,39 @@
 }
 
 .about-section {
+  padding-top: 50px;
   height: 100vh;
   font-family: monospace;
   p {
     font-size: 20px;
+    text-align: center;
   }
+
+  .about-images {
+    margin-top: 100px;
+
+    .about-img {
+      width: auto;
+      height: auto;
+      max-height: 400px;
+      overflow: hidden;
+      margin: 0 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+
+      }
+    }
+
+    .img-info {
+      font-size: 14px;
+      color: gray;
+      margin-bottom: 40px;
+    }
+
+
+  }
+
 }
 
