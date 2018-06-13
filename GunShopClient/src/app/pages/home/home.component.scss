@@ -1,0 +1,27 @@
+.main {
+  height: 100vh;
+  background:
+    url("https://i.pinimg.com/originals/31/e2/dc/31e2dcb78ec08960d33aadd607fe8498.jpg")
+    center
+    no-repeat
+    fixed;
+  background-size: cover;
+  padding: 0;
+}
+
+.headline {
+  font-size: 40px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+}
+
+.about-section {
+  height: 100vh;
+  font-family: monospace;
+  p {
+    font-size: 20px;
+  }
+}
+
