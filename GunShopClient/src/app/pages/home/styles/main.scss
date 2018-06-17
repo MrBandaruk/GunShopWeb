@@ -1,0 +1,22 @@
+// Main Page
+.main {
+  height: 100vh;
+  background:
+    url("../home/img/bg.jpg")
+    center
+    no-repeat
+    fixed;
+  background-size: cover;
+  padding: 0;
+
+  .logo {
+    height: 155px;
+    width: 100%;
+    background: url("../home/img/logo2.png")
+    center
+    no-repeat;
+    position: absolute;
+    top: 40%;
+  }
+}
+// End Main Page
