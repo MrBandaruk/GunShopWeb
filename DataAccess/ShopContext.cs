@@ -11,6 +11,7 @@ namespace DataAccess
         public DbSet<Gun> Guns { get; set; }
         public DbSet<Models.Type> Types { get; set; }
         public DbSet<AmmoType> AmmoTypes { get; set; }
+        public DbSet<User> Users { get; set; }
 
 
         public ShopContext(DbContextOptions<ShopContext> options) : base(options)

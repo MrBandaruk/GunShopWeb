@@ -68,6 +68,13 @@ namespace DataAccess
                 }
             });
 
+            db.Users.Add(new User
+            {
+                Name = "Nikita",
+                Password = "68ba07abf0d370630620ea43c68fabbd",
+                Username = "admin"
+            });
+
             db.SaveChanges();
         }
     }
