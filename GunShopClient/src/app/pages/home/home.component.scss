@@ -6,7 +6,7 @@ $xxl-screen: 1579px;
 @import 'styles/main.scss';
 @import 'styles/about.scss';
 @import 'styles/items.scss';
-@import 'styles/last.scss';
+@import 'styles/footer.scss';
 
 .headline {
   font-size: 40px !important;
@@ -22,15 +22,4 @@ $xxl-screen: 1579px;
   font-family: monospace;
   font-size: 20px;
   text-align: center;
-}
-
-footer {
-  color: white;
-  background: black;
-  background-size: cover;
-  height: 300px;
-  z-index: -5;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
