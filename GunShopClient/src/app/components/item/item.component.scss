@@ -1,0 +1,31 @@
+.item-image{
+  cursor: pointer;
+  width: 370px;
+  height: 370px;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    img{
+      filter: opacity(.1);
+    }
+  }
+
+  img {
+    height: 100%;
+    filter: opacity(.5);
+    transition: all 0.2s cubic-bezier(0, 0.23, 0.58, 1) 0ms;
+  }
+
+  .item-image-text {
+    position: absolute;
+    color: white;
+    font-family: monospace;
+    font-size: 60px;
+    margin-top: 135px;
+    //font-weight: bold;
+  }
+}

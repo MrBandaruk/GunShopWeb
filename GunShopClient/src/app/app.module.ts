@@ -14,12 +14,15 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AuthService} from './services/auth.service';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {AuthInterceptor} from './helpers/interceptors/auth.interceptor';
+import {AnonGuard} from './guards/anon.guard';
+import {AuthGuard} from './guards/auth.guard';
+import { ItemComponent } from './components/item/item.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'items', component: ItemsComponent },
-  { path: 'login', component: LoginComponent },
+  { path: 'items', component: ItemsComponent, canActivate: [AuthGuard] },
+  { path: 'login', component: LoginComponent, canActivate: [AnonGuard] },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 
@@ -29,7 +32,8 @@ const routes: Routes = [
     HomeComponent,
     ItemsComponent,
     NavbarComponent,
-    LoginComponent
+    LoginComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

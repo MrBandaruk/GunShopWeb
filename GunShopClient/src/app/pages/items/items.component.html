@@ -1,6 +1,10 @@
 <app-navbar></app-navbar>
 <div class="items-page">
-  <div class="container">
-
-  </div>
+    <div class="items-container">
+      <app-item
+        class="p-2"
+        *ngFor="let item of items"
+        [item]="item">
+      </app-item>
+    </div>
 </div>

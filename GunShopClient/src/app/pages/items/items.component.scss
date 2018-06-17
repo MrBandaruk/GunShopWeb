@@ -1,4 +1,19 @@
 .items-page {
   background-color: #37412C;
   height: 100vh;
+
+  .items-container {
+    padding-top: 20px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .p-2 {
+      outline: none;
+    }
+
+
+  }
 }
