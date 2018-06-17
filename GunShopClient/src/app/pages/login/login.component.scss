@@ -1,0 +1,53 @@
+@keyframes loginAppear {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.login-container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container:after {
+  content: "";
+  background: url("http://www.smartworld.it/wp-content/uploads/2016/06/apple-macos-sierra-final.jpg") no-repeat 0% 0%;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.login-form {
+  color: white !important;
+  animation: loginAppear 0.5s ease-out 0s 1 ;
+  background-color: rgba(47, 47, 47, 0.87);
+  border-radius: 3px;
+  box-shadow: 0px 5px 40px -7px black;
+  display: flex;
+  align-items: center;
+  width: 480px;
+  height: 325px;
+  padding: 40px 40px 40px 40px;
+  margin-top: -50px;
+}
+
+.col-md-12 {
+  margin: 5px 0;
+}
+
+.invalid-creds {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 20px;
+}
