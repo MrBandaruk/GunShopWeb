@@ -29,6 +29,9 @@ footer {
 
     .google-maps {
       display: flex;
+      @media screen and (max-width: $xl-screen) {
+        display: none;
+      }
       justify-content: center;
       height: 230px;
       overflow: hidden;

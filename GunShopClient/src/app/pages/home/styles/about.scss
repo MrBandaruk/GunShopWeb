@@ -1,6 +1,7 @@
 // About Page
 .about-section {
-  height: 100vh;
+  //height: 100vh;
+  height: auto;
   @media screen and (max-width: $md-screen) {
     height: auto;
   }
