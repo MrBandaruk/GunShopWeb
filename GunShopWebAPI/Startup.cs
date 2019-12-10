@@ -54,7 +54,7 @@ namespace GunShopWebAPI
                 .Build();
 
             services.AddDbContext<ShopContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection1")));
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             var serviceProvider = services.BuildServiceProvider();
 
